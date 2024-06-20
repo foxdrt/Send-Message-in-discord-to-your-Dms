@@ -4,8 +4,8 @@ const xhr = new XMLHttpRequest();
 
 const button = document.getElementById("Btn");
 button.addEventListener("click", function () {
-  const token = document.getElementById("Token").Value;
-  const Message = document.getElementById("Message").Value;
+  const token = document.getElementById("Token").value;
+  const Message = document.getElementById("Message").value;
 
   xhr.open("GET", "https://discord.com/api/users/@me/channels");
   xhr.setRequestHeader("authorization", token);
